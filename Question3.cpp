@@ -4,14 +4,14 @@ using namespace std;
 namespace n1{
     int a=5;
     void fun(){
-        cout<<"yoyo";
+        cout<<"Reyyan";
     }
 }
 
 namespace n2{
     int a=-5;
     void fun(){
-        cout<<"nonono";
+        cout<<"Duggal";
     }
 }
 
