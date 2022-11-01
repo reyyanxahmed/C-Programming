@@ -18,24 +18,14 @@ Stack* createStack(unsigned capacity)
 	return stack;
 }
 
-int isFull(Stack* stack)
-{
-	return stack->top == stack->capacity - 1;
-}
-
-int isEmpty(Stack* stack) { return stack->top == -1; }
 
 void push(Stack* stack, char item)
 {
-	if (isFull(stack))
-		return;
 	stack->array[++stack->top] = item;
 }
 
 char pop(Stack* stack)
 {
-	if (isEmpty(stack))
-		return -1;
 	return stack->array[stack->top--];
 }
 
